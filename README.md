@@ -64,6 +64,37 @@ deactivate
 The model learns the overall shape of the solution pretty well.  
 My Mean Absolute Error is around **0.04** (can change a bit between runs).
 
+## Results and Evaluation
+
+After training, I compare the network output to the analytical solution `sin(πx) sin(πy)` on a grid. The PINN is trained so the PDE residual matches the right-hand side inside the domain, and the boundary loss pushes `u` toward zero on the edges—so in theory it should satisfy both the equation and the boundary conditions once the losses are small enough.
+
+**Metrics**
+
+- **Mean Absolute Error (MAE):** ~0.04 (varies slightly each run)
+
+**What I noticed**
+
+- Stable training convergence (loss trends down over epochs)
+- Low error across most of the domain; biggest differences tend to show up where the solution changes fastest
+
+The plots below are what I save from the training script (place the PNGs in `images/` if you want them to show on GitHub).
+
+### Loss Curve
+
+![Loss](images/loss.png)
+
+### Predicted Solution
+
+![Prediction](images/pred.png)
+
+### Exact Solution
+
+![Exact](images/exact.png)
+
+### Error Surface
+
+![Error](images/error.png)
+
 ## Observations
 
 Training is stable, but it is not super fast on CPU.  
