@@ -77,7 +77,7 @@ After training, I compare the network output to the analytical solution `sin(πx
 - Stable training convergence (loss trends down over epochs)
 - Low error across most of the domain; biggest differences tend to show up where the solution changes fastest
 
-The plots below are what I save from the training script (place the PNGs in `images/` if you want them to show on GitHub).
+The plots below are what I save from the training script.
 
 #### Loss Curve
 ![Loss](images/loss.png)
