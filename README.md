@@ -79,20 +79,16 @@ After training, I compare the network output to the analytical solution `sin(πx
 
 The plots below are what I save from the training script (place the PNGs in `images/` if you want them to show on GitHub).
 
-### Loss Curve
-
+#### Loss Curve
 ![Loss](images/loss.png)
 
 ### Predicted Solution
-
 ![Prediction](images/pred.png)
 
 ### Exact Solution
-
 ![Exact](images/exact.png)
 
 ### Error Surface
-
 ![Error](images/error.png)
 
 ## Observations
