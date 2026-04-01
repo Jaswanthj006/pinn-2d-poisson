@@ -1,5 +1,5 @@
 torch==2.11.0
 torchvision==0.26.0
 torchaudio==2.11.0
-numpy
-matplotlib
+numpy==2.0.0
+matplotlib==3.8.0
